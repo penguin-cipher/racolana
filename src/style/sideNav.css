@@ -1,0 +1,129 @@
+@media screen {
+    
+    .side-nav {
+        padding: 15px 20px;
+    }
+    
+    .logo {
+        display: none;
+    }
+    
+    .nav-items {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .nav-items span {
+    
+        display: none;
+    }
+    
+    .icon {
+        color: black;
+        width: 24px;
+        height: 24px;
+        
+    }
+    
+    .active {
+        display: none;
+    }
+    
+    .nav-elem:hover .active {
+        display: block;
+    }
+    
+    .nav-elem:hover .inactive {
+        display: none;
+    }
+
+}
+
+
+/* ipad/tablet */
+@media only screen and (min-width:48.0em){
+
+    .side-nav {
+        padding: 20px 30px;
+    }
+
+}
+
+
+@media only screen and (min-width:49.0em) {
+
+    .side-nav {
+        flex-direction: column;
+        display: flex;
+        height: 100%;
+        width: 100%;
+     
+    }
+
+    .icon {
+        color: black;
+        width: 24px;
+        height: 24px;
+        
+    }
+
+    .logo {
+        display: flex;
+        padding: 50px 0;
+
+    } 
+
+    .nav-items {
+        height: 30%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+       
+    .nav-items span {
+    
+        display: flex;
+    }
+
+    .nav-elem {
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        padding: 5px ;
+        width: 100%;
+        gap: 0.5em;
+    }
+
+    .nav-elem:hover .icon {
+        color: white;
+    }
+
+    .nav-elem:hover {
+        color:white;
+        background-color: black;
+    }
+    
+
+}
+
+/* ipad pro screens & laptop */
+@media only screen and (min-width:49.0em) and (max-width:64em) {
+
+}
+
+/* large screens : Desktop and 4k screens */
+
+@media only screen and (min-width:64.063em) and (max-width:90.0em) {
+
+    
+    
+}
+
+
+/* 5k screens and above */
+@media only screen and (min-width:91.0em) {
+
+
+}
