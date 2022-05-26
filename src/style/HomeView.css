@@ -1,0 +1,29 @@
+.home-c {
+    display: flex;
+    padding: 10px;
+    height: 100%; 
+    flex-direction: column;   
+    border: 2px solid green;
+}
+
+.service-temp {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    border:2px solid blue;
+
+}
+
+.service-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.service-rate {
+    display: flex;
+    gap: 0.5em;
+
+}
