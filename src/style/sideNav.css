@@ -2,6 +2,7 @@
     
     .side-nav {
         padding: 15px 20px;
+        
     }
     
     .logo {
@@ -20,7 +21,7 @@
     }
     
     .icon {
-        color: black;
+        fill: var(--primary-color-light);
         width: 24px;
         height: 24px;
         
@@ -41,38 +42,31 @@
 }
 
 
-/* ipad/tablet */
-@media only screen and (min-width:48.0em){
-
-    .side-nav {
-        padding: 20px 30px;
-    }
-
-}
-
-
 @media only screen and (min-width:49.0em) {
 
     .side-nav {
         flex-direction: column;
         display: flex;
-        height: 100%;
-        width: 100%;
-     
     }
 
-    .icon {
-        color: black;
+    .icon { 
         width: 24px;
         height: 24px;
         
     }
 
     .logo {
+        width: 100%;
         display: flex;
         padding: 50px 0;
-
+        align-items: center;
+        justify-content: center;
     } 
+
+    .logo a {
+        text-decoration: none;
+        color: var(--secondary-color);
+    }
 
     .nav-items {
         height: 30%;
@@ -83,26 +77,27 @@
     }
        
     .nav-items span {
-    
         display: flex;
     }
 
     .nav-elem {
+        color: var(--primary-color-light);
         display: flex;
         align-items: center;
         border-radius: 10px;
-        padding: 5px ;
+        text-decoration: none;
+        padding: 6px;
         width: 100%;
         gap: 0.5em;
     }
 
     .nav-elem:hover .icon {
-        color: white;
+        fill: var(--background-color-light);
     }
 
     .nav-elem:hover {
         color:white;
-        background-color: black;
+        background-color: var(--secondary-color);
     }
     
 

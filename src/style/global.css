@@ -4,10 +4,18 @@
 *
 {
 
-    --background-color-light: ;
-    --background-color-soft: rgb(240,242,245);
+    --background-color-light: rgb(255,255,255);
+    --background-color-dark: rgb(242, 247, 246);
+    --primary-color-light: rgb(171, 177, 180);
+    --primary-color-dark: rgb(55, 54, 75);
+    --secondary-color: rgb(30, 194, 139);
 
     
+}
+
+body {
+    background-color: var(--background-color-light) ;
+    color: var(--primary-color-dark);
 }
 
 
@@ -21,27 +29,28 @@
     bottom: 0;
     display:flex;
     position: fixed;
-    overflow-y: hidden;
+    overflow-y: auto;
     overflow-x: hidden;
 }
 
 .sidebar-c {
-    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16);
-    -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16);
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16);
+ 
+    background-color: var(--background-color-light);
     height: fit-content;
+    justify-content: center;
     position: fixed;
     width: 100%;
     z-index: 5;
     bottom: 0;
-
 }
 
 
 
 .content {
     width: 100%;
-    background-color: var(--background-color-soft);
+    height: fit-content;
+    background-color: var(--background-color-dark);
+    
 }
 
 
@@ -58,19 +67,34 @@
 
 @media only screen and (min-width:49.0em) {
 
+
+.app-layout {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
     .sidebar-c {
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
-        width: auto;
+        width: auto;    
         display:flex;
         height: 100%;
+        padding: 0 10px;
         position:relative;
         overflow-y: hidden;
         overflow-x: hidden;
     }
 
+
+    .content {
+        width: 100%;
+        margin: 10px 0;
+        border-radius: 30px;
+        background-color: var(--background-color-dark);
+        
+    }
 }
 
 /* ipad pro screens & laptop */
