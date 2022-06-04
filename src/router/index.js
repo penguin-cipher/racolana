@@ -15,8 +15,9 @@ const router = createRouter({
       component: () => import("../views/MessageView.vue"),
     },
     {
-      path: "/cart",
-      name: "Cart",
+      path: "/:id",
+      name: "items",
+      props: true,
       component: () => import("../views/CartItems.vue"),
     },
     {
