@@ -1,7 +1,7 @@
     @media screen {
     .home-c {
-        padding: 8px;
         display: flex;
+        padding-left:10px ;
         flex-direction: column;
     }
     
@@ -108,8 +108,7 @@
     .upcoming-container {
         display: flex;
         margin: 10px 0;
-        
-        width: 100%;
+        width: 95%;
         border-radius: 20px;
         flex-direction: column;
         background-color: var(--background-color-light);
