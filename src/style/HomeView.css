@@ -108,9 +108,9 @@
     }
 
     .upcoming-container {
+        width: 95%;
         display: flex;
         margin: 15px 0;
-        width: 95%;
         border-radius: 20px;
         flex-direction: column;
         background-color: var(--background-color-light);
@@ -118,6 +118,7 @@
 
     .upcoming-wrapper {
         display: flex;
+        padding: 10px 0;
         column-gap: 20px;
         align-items: center;
     }
