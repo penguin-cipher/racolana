@@ -9,12 +9,12 @@
       <div class="cart-info">
         <h1>{{serviceName}}</h1>
         <h3>{{ Description }}</h3>
-           <h3>{{ location }}</h3>
-        <div class="cartDetails">
+  
+      </div>
+          <div class="cartDetails ">
           <h4>Total: {{ Price }}</h4>
           <div class="cart-button">Get work</div>
         </div>
-      </div>
     </div>
   </div>
 </template>

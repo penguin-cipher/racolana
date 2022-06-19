@@ -4,8 +4,8 @@
     right: 0;
     bottom: 0;
     height: 100%;
-    position: fixed;
     display: flex;
+    position: fixed;
     flex-direction: column;
     justify-content: flex-end;
     /* background-image: url("https://mydecorative.com/wp-content/uploads/2019/03/land-clearing.jpg"); */
@@ -17,7 +17,6 @@
 }
 
 .cart-wrapper {
-    height: 60%;
     width: 100%;
     min-height: 50%;
     position: absolute;
@@ -26,17 +25,25 @@
 
 }
 
+
+
+.cart-wrapper h1 {
+    font-size: 1.2rem;
+}
+
 .cart-wrapper h3 {
     color: var(--primary-color-light);
+    font-size: 1rem;
 }
 
 .cart-info {
-    padding: 20px 20px;
-    height: 100%;
+    padding: 20px;
+     height: 100%;
 }
 
 .cartDetails {
     display: flex;
+    padding: 20px;
     column-gap: 10px;
     align-items: center;
     justify-content: space-between;
