@@ -1,14 +1,15 @@
 <template>
   <div
     class="cart-container"
-    v-for="({ location, Price, Description, serviceImg }, index) in itemData"
+    v-for="({ location, Price, Description, serviceImg , serviceName }, index) in itemData"
     :key="index"
   >
     <img :src="serviceImg" class="cart-img" />
     <div class="cart-wrapper">
       <div class="cart-info">
-        <h1>{{ location }}</h1>
+        <h1>{{serviceName}}</h1>
         <h3>{{ Description }}</h3>
+           <h3>{{ location }}</h3>
         <div class="cartDetails">
           <h4>Total: {{ Price }}</h4>
           <div class="cart-button">Get work</div>
