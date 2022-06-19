@@ -1,8 +1,6 @@
-@media screen {
+    @media screen {
     .home-c {
-        padding: 20px 0;
-        padding-left:10px;
-        padding-bottom: 70px;
+        padding: 8px;
         display: flex;
         flex-direction: column;
     }
@@ -12,7 +10,7 @@
     }
 
     .mobile-greet {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .search {
@@ -42,25 +40,25 @@
     }
 
     .service-responsive {
+        justify-content: space-between;
         position: relative;
-        overflow-x: auto;
-        column-gap:20px;
+        overflow-x: scroll;
         padding: 10px 0;
-        padding-right: 20px;
+        column-gap:20px;
         display: flex;
-    
+
     }
 
     .service-img {
         border-radius: 20px;
         height: 300px;
-        width: 295px;
+        width:300px;
   
     }
 
     .service-temp-image {
        
-        object-fit: fill;
+        object-fit: cover;
         border-radius: inherit;
         height: inherit;
         width: inherit;
@@ -110,8 +108,8 @@
     .upcoming-container {
         display: flex;
         margin: 10px 0;
-        padding: 6px;
-        width: 90%;
+        
+        width: 100%;
         border-radius: 20px;
         flex-direction: column;
         background-color: var(--background-color-light);
